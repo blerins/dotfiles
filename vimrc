@@ -1,6 +1,6 @@
 set runtimepath+=~/.vim/plugins/vam
-"call vam#ActivateAddons(["ack","ctrlp","SuperTab%1643","vim-powerline","Solarized","The_NERD_tree","Syntastic","vim-scala@behaghel"])
-call vam#ActivateAddons(["ack","ctrlp","SuperTab%1643","vim-powerline","Solarized","The_NERD_tree","vim-scala@behaghel"])
+"call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-powerline","Solarized","The_NERD_tree","Syntastic","vim-scala@behaghel"])
+call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-powerline","Solarized","The_NERD_tree","vim-scala","Indent_Guides"])
 
 set mouse=a
 
@@ -69,6 +69,12 @@ set wildignore+=*.pyc
 
 if has("gui_running")
   set guioptions=acei
+
+  " Indent Guides
+  let g:indent_guides_enable_on_vim_startup = 1
+  let g:indent_guides_color_change_percent = 4
+  let g:indent_guides_start_level= 3
+  let g:indent_guides_guide_size = 1
 endif
 
 " The NERD tree
