@@ -42,6 +42,12 @@ set smartcase " ... unless they contain at least one capital letter
 " Clear highlight
 nnoremap <space> :noh<return><space>
 
+" Close Quickfix
+nnoremap <C-esc> :ccl<return>
+
+" Search
+nnoremap <C-f> :Ack!<space>
+
 " Special copy paste bindings
 vnoremap <C-c> "+ygv
 vnoremap <C-x> "+x
@@ -85,6 +91,7 @@ let NERDTreeMapOpenVSplit = "v"
 " CtrlP
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|target$'
+let g:ctrlp_switch_buffer = 'etH'
 
 " Powerline hack
 set laststatus=2
