@@ -21,7 +21,7 @@ hg_branch() {
 }
 
 # prompt
-export PS1='\[\033[1;36m\]\u\[\033[0m\]@\[\033[1;36m\]\h\[\033[0m\]:\[\033[1;32m\]\w\[\033[1;33m\]$(hg_branch)$(__git_ps1 " [GIT:\[\033[1;33m\]%s]")\[\033[0m\]\$ '
+export PS1='\[\033[1;36m\]\u\[\033[0m\]@\[\033[1;36m\]\h\[\033[0m\]:\[\033[1;32m\]\w\[\033[1;33m\]$(hg_branch)$(__git_ps1 " [GIT:%s]")\[\033[0m\]\$ '
 
 # git status
 export GIT_PS1_SHOWDIRTYSTATE=1
