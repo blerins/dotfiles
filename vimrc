@@ -1,6 +1,6 @@
 set runtimepath+=~/.vim/plugins/vam
 "call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-powerline","Solarized","The_NERD_tree","Syntastic","vim-scala@behaghel"])
-call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-powerline","Solarized","The_NERD_tree","vim-scala","Indent_Guides", "delimitMate"])
+call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-powerline","Solarized","The_NERD_tree","vim-scala","Indent_Guides", "taboo"])
 
 set mouse=a
 
@@ -47,6 +47,10 @@ nnoremap <C-esc> :ccl<return>
 
 " Search
 nnoremap <C-f> :Ack!<space>
+
+" File completion
+set wildmode=longest,list,full
+set wildmenu
 
 " Special copy paste bindings
 vnoremap <C-c> "+ygv
@@ -98,12 +102,6 @@ set laststatus=2
 if has("gui_running")
   let g:Powerline_colorscheme = 'solarized'
 endif
-
-" DelimitMate
-let delimitMate_expand_cr = 1
-
-" Supertab
-let g:SuperTabCrMapping = 0 " prevent remap from breaking supertab
 
 " Syntastic
 " Python stuff
