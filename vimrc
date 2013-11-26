@@ -1,6 +1,6 @@
 set runtimepath+=~/.vim/plugins/vam
 "call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-powerline","Solarized","The_NERD_tree","Syntastic","vim-scala@behaghel"])
-call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-powerline","Solarized","The_NERD_tree","vim-scala","Indent_Guides", "taboo"])
+call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-powerline","Solarized","The_NERD_tree","vim-scala","Indent_Guides"])
 
 set mouse=a
 
@@ -18,7 +18,7 @@ set list listchars=tab:»>,trail:·,extends:#
 
 " Syntax highligting
 syntax enable
-set cursorline
+" set cursorline
 set colorcolumn=100
 set t_Co=256
 set background=dark
