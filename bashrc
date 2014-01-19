@@ -26,6 +26,8 @@ export PS1='\[\033[1;36m\]\u\[\033[0m\]@\[\033[1;36m\]\h\[\033[0m\]:\[\033[1;32m
 # git status
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+
 
 # rbenv
 eval "$(rbenv init -)"
