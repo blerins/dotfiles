@@ -1,0 +1,9 @@
+[include]
+  path = .gitconfig.user
+[push]
+  default = simple
+[alias]
+  in = !git fetch && git log ..@{u}
+  out = log @{u}..
+  ci = commit
+  st = status

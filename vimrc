@@ -1,6 +1,6 @@
 set runtimepath+=~/.vim/plugins/vam
 "call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-powerline","Solarized","The_NERD_tree","Syntastic","vim-scala@behaghel"])
-call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-powerline","Solarized","The_NERD_tree","vim-scala","Indent_Guides"])
+call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-powerline","Solarized","The_NERD_tree","vim-scala","Indent_Guides","Tagbar"])
 
 set mouse=a
 
@@ -91,6 +91,9 @@ endif
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeMapOpenSplit = "s"
 let NERDTreeMapOpenVSplit = "v"
+
+" TagBar
+nmap <F8> :TagbarToggle<CR>
 
 " CtrlP
 let g:ctrlp_working_path_mode = 0
