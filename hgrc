@@ -1,0 +1,15 @@
+[ui]
+verbose = true
+# debug = true
+
+[extensions]
+graphlog =
+rebase =
+color =
+hgext.purge =
+record =
+
+[color]
+diff.deleted = red bold
+
+%include ~/.hgrc.user
