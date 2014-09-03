@@ -33,6 +33,9 @@ set nowrap
 set sw=2 ts=2 sts=2
 autocmd FileType python :setlocal sw=4 ts=4 sts=4
 
+" Autocoments
+set formatoptions+=cro
+
 " Searching
 set hlsearch " highlight matches
 set incsearch " incremental searching
