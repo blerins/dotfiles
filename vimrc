@@ -14,9 +14,11 @@ fun! SetupVAM()
   endif
 
   " This provides the VAMActivate command, you could be passing plugin names, too
-  call vam#ActivateAddons(["ack","ctrlp","Supertab","powerline","Solarized","The_NERD_tree","Indent_Guides", "fugitive"], {})
+  call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-airline","The_NERD_tree","Indent_Guides"], {})
 endfun
 call SetupVAM()
+
+VAMActivate github:jordwalke/flatlandia
 
 set mouse=a
 
@@ -38,9 +40,7 @@ syntax enable
 set colorcolumn=100
 set t_Co=256
 set background=dark
-let g:solarized_termcolors = 256
-let g:solarized_contrast = "high"
-colorscheme solarized
+colorscheme flatlandia
 
 " Indenting
 set smartindent
@@ -111,9 +111,6 @@ map <F2> :NERDTreeToggle<CR>
 let NERDTreeMapOpenSplit = "s"
 let NERDTreeMapOpenVSplit = "v"
 
-" TagBar
-" nmap <F8> :TagbarToggle<CR>
-
 " CtrlP
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|target$'
@@ -121,10 +118,6 @@ let g:ctrlp_switch_buffer = 'etH'
 
 " Powerline hack
 set laststatus=2
-let g:powerline_config_overrides={'ext': {'vim': {'top_theme': 'unicode'}}}
-if has("gui_running")
-  let g:powerline_config_overrides.ext.vim.colorscheme = 'solarizedlight'
-endif
 
 " Syntastic
 " Python stuff
