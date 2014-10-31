@@ -1,5 +1,3 @@
-set nocompatible | filetype indent plugin on | syn on
-
 fun! SetupVAM()
   let c = get(g:, 'vim_addon_manager', {})
   let g:vim_addon_manager = c
