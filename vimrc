@@ -16,7 +16,7 @@ fun! SetupVAM()
 endfun
 call SetupVAM()
 
-VAMActivate github:jordwalke/flatlandia
+VAMActivate github:blerins/flattown
 
 set mouse=a
 
@@ -38,7 +38,7 @@ syntax enable
 set colorcolumn=100
 set t_Co=256
 set background=dark
-colorscheme flatlandia
+colorscheme flattown
 
 " Indenting
 set smartindent
