@@ -12,7 +12,7 @@ fun! SetupVAM()
   endif
 
   " This provides the VAMActivate command, you could be passing plugin names, too
-  call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-airline","The_NERD_tree","Indent_Guides"], {})
+  call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-airline","The_NERD_tree","Indent_Guides","fugitive"], {})
 endfun
 call SetupVAM()
 
