@@ -1,0 +1,44 @@
+! black
+URxvt.color0  : #000000
+URxvt.color8  : #555557575353
+! red
+URxvt.color1  : #CCCC00000000
+URxvt.color9  : #EFEF29292929
+! green
+URxvt.color2  : #4E4E9A9A0606
+URxvt.color10 : #8A8AE2E23434
+! yellow
+URxvt.color3  : #C4C4A0A00000
+URxvt.color11 : #FCFCE9E94F4F
+! blue
+URxvt.color4  : #34346565A4A4
+URxvt.color12 : #72729F9FCFCF
+! magenta
+URxvt.color5  : #757550507B7B
+URxvt.color13 : #ADAD7F7FA8A8
+! cyan
+URxvt.color6  : #060698209A9A
+URxvt.color14 : #3434E2E2E2E2
+! white
+URxvt.color7  : #D3D3D7D7CFCF
+URxvt.color15 : #EEEEEEEEECEC
+
+URxvt.foreground: #E0E0E0
+URxvt.background: #26292C
+
+URxvt.scrollBar: False
+URxvt.scrollTtyOutput: False
+URxvt.scrollTtyKeypress: True
+URxvt.secondaryScroll: True
+URxvt.saveLines: 8000
+
+URxvt.perl-ext-common : tabbed
+URxvt.tabbed.tabbar-fg: 5
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg:    14
+URxvt.tabbed.tab-bg:    0
+
+! fonts
+! run "fc-list" for a list of available fonts
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=15,style=regular:antialias=true:hinting=true
+URxvt.letterSpace: -2
