@@ -12,7 +12,7 @@ fun! SetupVAM()
   endif
 
   " This provides the VAMActivate command, you could be passing plugin names, too
-  call vam#ActivateAddons(["ack","ctrlp","Supertab","vim-airline","The_NERD_tree","Indent_Guides","fugitive"], {})
+  call vam#ActivateAddons(["ctrlp","Supertab","vim-airline","The_NERD_tree","Indent_Guides","fugitive"], {})
 endfun
 call SetupVAM()
 
@@ -63,7 +63,7 @@ nnoremap <space> :noh<return><space>
 nnoremap <C-esc> :ccl<return>
 
 " Search
-nnoremap <C-f> :Ack!<space>
+nnoremap <C-f> :cope<space><return>:grep!<space>-rIi<space>
 
 " File completion
 set wildmode=longest,list,full
@@ -118,6 +118,9 @@ let g:ctrlp_switch_buffer = 'etH'
 set laststatus=2
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
+
+" Supertab
+let g:SuperTabDefaultCompletionType = "context"
 
 " Syntastic
 " Python stuff

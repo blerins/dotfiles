@@ -7,4 +7,3 @@
   out = log @{u}..
   ci = commit
   st = status
-  pull = pull --ff-only
