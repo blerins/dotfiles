@@ -26,7 +26,9 @@ URxvt.color15 : #EEEEEEEEECEC
 URxvt.foreground: #E0E0E0
 URxvt.background: #26292C
 
-URxvt.scrollBar: False
+URxvt.scrollBar: True
+URxvt.scrollBar_right: True
+URxvt.scrollstyle: plain
 URxvt.scrollTtyOutput: False
 URxvt.scrollTtyKeypress: True
 URxvt.secondaryScroll: True
