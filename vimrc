@@ -88,8 +88,11 @@ nnoremap <A-right> <C-w>L
 
 nnoremap <C-t> :CtrlPBuffer<return>
 
-" C# comment colors
-hi csXmlTag gui=italic guifg=#657b83
+let mapleader = ","
+
+nmap <leader>tw :ta <C-R><C-W><return>
+nmap <leader>tl :ts <C-R><C-W><return>
+nmap <leader>fw :grep -rIi <C-R><C-W> .<return><return>:cw<return>
 
 " ignoring files
 set wildignore+=*.pyc

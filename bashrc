@@ -8,7 +8,7 @@ hg_branch() {
     hg branch 2> /dev/null | \
         awk '{ printf " [HG:" $1}'
     hg status 2> /dev/null \
-      | awk '$1 == "?" { unknown = 1 } 
+      | awk '$1 == "?" { unknown = 1 }
              $1 == "!" { unknown = 1 }
              $1 != "?" { changed = 1 }
              END {
