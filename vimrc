@@ -128,3 +128,7 @@ let g:SuperTabDefaultCompletionType = "context"
 " Syntastic
 " Python stuff
 let g:syntastic_python_checker_args='--ignore=E501'
+
+if filereadable(glob("~/.vimrc.local"))
+    source ~/.vimrc.local
+endif
