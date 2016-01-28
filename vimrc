@@ -12,10 +12,11 @@ fun! SetupVAM()
   endif
 
   " This provides the VAMActivate command, you could be passing plugin names, too
-  call vam#ActivateAddons(["ctrlp","Supertab","vim-airline","The_NERD_tree","Indent_Guides","fugitive"], {})
+  call vam#ActivateAddons(["Supertab","vim-airline","The_NERD_tree","Indent_Guides","fugitive"], {})
 endfun
 call SetupVAM()
 
+VAMActivate github:ctrlpvim/ctrlp.vim
 VAMActivate github:blerins/flattown
 
 set mouse=a
