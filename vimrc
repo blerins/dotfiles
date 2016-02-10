@@ -63,9 +63,6 @@ nnoremap <space> :noh<return><space>
 " Close Quickfix
 nnoremap <C-esc> :ccl<return>
 
-" Search
-nnoremap <C-f> :cope<space><return>:grep!<space>-rIi<space>
-
 " File completion
 set wildmode=longest,list,full
 set wildmenu
