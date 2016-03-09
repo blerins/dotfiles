@@ -2,9 +2,12 @@
   path = .gitconfig.user
 [push]
   default = simple
+[pull]
+  rebase = true
+[rebase]
+  stat = true
 [alias]
   in = !git fetch && git log ..@{u}
   out = log @{u}..
   ci = commit
   st = status
-  pl = pull --ff-only --stat
