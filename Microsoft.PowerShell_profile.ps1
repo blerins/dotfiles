@@ -1,4 +1,5 @@
 # C:\Users\<user>\Documents\WindowsPowerShell\
+# > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 function prompt {
   Write-Host "PS " -NoNewline
   Write-Host $(get-location) -NoNewline -ForegroundColor "darkCyan"
